@@ -13,5 +13,5 @@ deploy:
     application: CodeDeployGitHubDemo-App
     deployment_group: CodeDeployGitHubDemo-DepGrp
     region: us-east-1
-    after_script: /hone/ubuntu/scripts/update.bs
+    after_script: ./updateapp.sh
     
