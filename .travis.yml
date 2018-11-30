@@ -1,0 +1,15 @@
+deploy:
+  - provider: codedeploy
+    revision_type: github
+    access_key_id: "YOUR AWS ACCESS KEY"
+    secret_access_key: "YOUR AWS SECRET KEY"
+    application: CodeDeployGitHubDemo-App
+    deployment_group: CodeDeployGitHubDemo-DepGrp
+    region: us-east-1
+    after_script: /hone/ubuntu/scripts/update.bs
+    language: python
+    python:
+       - "3.7-dev"  # 3.7 development branch
+    branches:
+      only:
+         - master
