@@ -10,6 +10,7 @@ deploy:
     application: CodeDeployGitHubDemo-App
     deployment_group: CodeDeployGitHubDemo-DepGrp
     region: us-east-1
+    sudo: enabled
     script: ./scripts/test.sh
     after_script: ./updateapp.sh
     
