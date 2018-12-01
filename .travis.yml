@@ -7,7 +7,7 @@ python:
     - "3.7-dev"
     
 install:
-  - pip3.7 install pipenv
+  - sudo pip3.7 install pipenv
   - sudo bash ./run.sh
   
 after_install: 
