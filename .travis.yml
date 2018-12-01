@@ -11,6 +11,7 @@ install:
   - sudo pip3 install pipenv
   - sudo bash ./install.sh
   #- sudo bash ./run.sh
+  - sudo pip3 install flask
   - sudo python app.py &
 
 script: 
