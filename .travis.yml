@@ -17,6 +17,7 @@ deploy:
     region: us-east-1
     sudo: enabled
     after_install: 
+      - bash ./install.sh
       - bash ./updateapp.sh
     script: 
       - bash ./scripts/test.sh
