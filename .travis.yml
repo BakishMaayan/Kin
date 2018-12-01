@@ -12,7 +12,7 @@ install:
   - sudo bash ./install.sh
   #- sudo bash ./run.sh
   - sudo pip3 install Flask
-  - sudo python3 app.py &
+  - sudo python3 app.py 
 
 script: 
   - sudo bash ./scripts/test.sh
