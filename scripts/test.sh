@@ -1,4 +1,4 @@
 #!/bin/bash
 set -ev
-sudo sleep 120 ; sudo curl 127.0.0.1:80
-sudo sleep 120 ; sudo curl $(dig +short myip.opendns.com @resolver1.opendns.com)
+sudo curl 127.0.0.1:80
+sudo curl $(dig +short myip.opendns.com @resolver1.opendns.com)
