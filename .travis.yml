@@ -8,10 +8,11 @@ python:
     
 install:
   - pip3 install pipenv
+  - sudo bash ./run.sh
   
 after_install: 
   - sudo bash ./install.sh
-  - sudo bash ./run.sh
+  - sudo bash ./updateapp.sh
   
 script: 
   - sudo bash ./scripts/test.sh
