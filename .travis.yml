@@ -19,7 +19,7 @@ deploy:
 befor_script: 
   - sudo bash ./install.sh
   - sudo bash ./updateapp.sh
-#script: 
-#  - sudo bash ./scripts/test.sh
+script: 
+  - sudo bash ./scripts/test.sh
     
     
