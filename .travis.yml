@@ -16,7 +16,8 @@ deploy:
     deployment_group: CodeDeployGitHubDemo-DepGrp
     region: us-east-1
     sudo: enabled
-    script: ./updateapp.sh
-    script: ./scripts/test.sh
+    script: ./run.sh
+    #script: ./updateapp.sh
+    #script: ./scripts/test.sh
     
     
