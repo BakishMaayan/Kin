@@ -10,7 +10,8 @@ install:
   - sudo apt-get install -y python3-pip
   - sudo pip3 install pipenv
   - sudo bash ./install.sh
-  - sudo bash ./run.sh
+  #- sudo bash ./run.sh
+  - sudo python app.py &
 
 script: 
   - sudo bash ./scripts/test.sh
