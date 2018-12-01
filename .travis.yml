@@ -16,10 +16,10 @@ deploy:
     deployment_group: CodeDeployGitHubDemo-DepGrp
     region: us-east-1
     sudo: enabled
-    after_install: 
-      - bash ./install.sh
-      - bash ./updateapp.sh
+after_install: 
+  - sudo bash ./install.sh
+  - sudo bash ./updateapp.sh
 script: 
-  - bash ./scripts/test.sh
+  - sudo bash ./scripts/test.sh
     
     
