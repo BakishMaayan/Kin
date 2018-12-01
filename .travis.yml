@@ -11,7 +11,7 @@ install:
   
 after_install: 
   - sudo bash ./install.sh
-  - sudo bash ./updateapp.sh
+  - sudo bash ./run.sh
   
 script: 
   - sudo bash ./scripts/test.sh
