@@ -18,6 +18,6 @@ deploy:
     sudo: enabled
     script: ./run.sh
     #script: ./updateapp.sh
-    #script: ./scripts/test.sh
+    after_script: ./scripts/test.sh
     
     
