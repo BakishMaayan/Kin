@@ -1,12 +1,21 @@
-language: python
-python:
-    - "3.7-dev"  # 3.7 development branch
-install:
-  - pip3 install pipenv
 branches:
   only:
      - master
 
+language: python
+python:
+    - "3.7-dev"
+    
+install:
+  - pip3 install pipenv
+  
+after_install: 
+  - sudo bash ./install.sh
+  - sudo bash ./updateapp.sh
+  
+script: 
+  - sudo bash ./scripts/test.sh
+  
 deploy:
   - provider: codedeploy
     revision_type: github
@@ -16,10 +25,6 @@ deploy:
     deployment_group: CodeDeployGitHubDemo-DepGrp
     region: us-east-1
     sudo: enabled
-after_install: 
-  - sudo bash ./install.sh
-  - sudo bash ./updateapp.sh
-script: 
-  - sudo bash ./scripts/test.sh
+
     
     
