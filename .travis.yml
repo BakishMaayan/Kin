@@ -9,10 +9,10 @@ python:
 install:
   - sudo apt-get install -y python3-pip
   - sudo pip3 install pipenv
-  - sudo bash ./install.sh
+  #- sudo bash ./install.sh
   #- sudo bash ./run.sh
-  - sudo pip3 install Flask
-  - sudo python3 app.py 
+  #- sudo pip3 install Flask
+  - sudo FLASK_APP=app.py pipenv run flask run --host 0.0.0.0 --port 80 &
 
 script: 
   - sudo bash ./scripts/test.sh
