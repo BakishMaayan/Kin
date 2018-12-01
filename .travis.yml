@@ -7,7 +7,7 @@ python:
     - "3.7-dev"
     
 install:
-  - sudo ./scripts/befor_install.sh
+  - sudo bash ./scripts/befor_install.sh
  # - sudo apt-get install -y python3-pip
   - sudo pip3.7 install pipenv
   - sudo bash ./install.sh
