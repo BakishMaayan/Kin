@@ -7,13 +7,10 @@ python:
     - "3.7-dev"
     
 install:
-  - sudo bash ./scripts/befor_install.sh
- # - sudo apt-get install -y python3-pip
+  - sudo apt-get install -y python3-pip
   - sudo pip3.7 install pipenv
   - sudo bash ./install.sh
   - sudo bash nohup ./run.sh &
-  #- sudo pip3 install Flask
-  #- sudo FLASK_APP=app.py pipenv run flask run --host 0.0.0.0 --port 80
 
 script: 
   - sudo bash ./scripts/test.sh
